@@ -1,0 +1,26 @@
+:root{
+    --color-red: rgba(225,4,1,1);
+    --color-black: rgba(0,0,0,1);
+    --color-white: rgba(255, 255, 255,1);
+}
+
+body{
+    background: var(--color-red);
+    background: linear-gradient(222deg, var(--color-red) 0%, var(--color-black) 80%, var(--color-black) 100%);
+}
+
+.btn-red{
+    background-color: var(--color-red);
+}
+
+.btn-red:hover{
+    border-color: var(--color-white);
+    i{
+        color: var(--color-white);
+    }
+}
+
+.btn-red i{
+    color: var(--color-black);
+}
+    
