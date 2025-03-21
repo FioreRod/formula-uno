@@ -1,74 +1,89 @@
-:root{
-    --color-red: rgba(225,4,1,1);
-    --color-dark-red: rgb(190, 0, 0) ;
-    --color-black: rgba(0,0,0,1);
-    --color-white: rgba(255, 255, 255,1);
+:root {
+    --color-red: rgba(225, 4, 1, 1);
+    --color-dark-red: rgb(190, 0, 0);
+    --color-black: rgba(0, 0, 0, 1);
+    --color-white: rgba(255, 255, 255, 1);
 }
 
-body{
+body {
     height: 100vh;
+    padding-top: 50px;
+    overflow-x: hidden;
     background: var(--color-red);
     background: linear-gradient(222deg, var(--color-red) 0%, var(--color-black) 80%, var(--color-black) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: var(--color-white);
+}
+
+h1,
+h4,
+h5,
+p {
+    color: var(--color-white);
+}
+
+p {
+    text-align: justify;
 }
 
 /* HEADER ___________________________________________________________________________________________________________ */
 
-.btn-red{
+header {
+    position: fixed;
+    top: 40px;
+}
+
+.btn-red {
     background-color: var(--color-red);
 }
 
-.btn-red:hover{
+.btn-red:hover {
     border-color: var(--color-white);
-    i{
+
+    i {
         color: var(--color-white);
     }
 }
 
-.btn-red i{
+.btn-red i {
     color: var(--color-black);
 }
 
-#offcanvasWithBothOptions{
+#offcanvasWithBothOptions {
     width: 25vw;
     background-color: var(--color-black);
     border-right: 0.5px solid var(--color-dark-red);
     color: var(--color-white);
 }
 
-.text-reset{
+.text-reset {
     color: var(--color-white);
 }
 
-.offcanvas-body{
+.offcanvas-body {
     display: flex;
     flex-direction: column;
 }
 
-.offcanvas-btn{
+.offcanvas-btn {
     background-color: transparent;
     border: 1px solid var(--color-red);
     border-radius: 10px;
     width: 50%;
 }
 
-.offcanvas-btn a{
+.offcanvas-btn a {
     color: var(--color-white);
     text-decoration: none;
 }
 
 
-h1{
-    color: var(--color-white);
-}
-
 
 /* CORREDORES ________________________________________________________________________________________________________*/
-.corre{
+.corre {
     border: 1px solid var(--color-dark-red);
     border-radius: 10px;
-    color: var(--color-white);
 }
 
 .col-libre {
@@ -76,7 +91,13 @@ h1{
     margin: -5px;
 }
 
-.mr-2{
+.mr-2 {
     margin-right: 2px;
 }
-    
+
+.img-piloto {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
