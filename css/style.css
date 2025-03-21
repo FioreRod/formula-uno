@@ -84,6 +84,7 @@ header {
 .corre {
     border: 1px solid var(--color-dark-red);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .col-libre {
@@ -101,6 +102,7 @@ header {
 .img-circ {
     width: 80%;
     height: auto;
+    border-radius: 10px;
 }
 
 
