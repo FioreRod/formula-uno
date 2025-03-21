@@ -98,6 +98,11 @@ header {
     margin-bottom: 5px;
 }
 
+.img-circ {
+    width: 80%;
+    height: auto;
+}
+
 
 
 @media (max-width: 576px) {
