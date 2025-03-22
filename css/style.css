@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    padding-top: 50px;
+    padding-top: 30px;
     overflow-x: hidden;
     background: var(--color-red);
     background: linear-gradient(222deg, var(--color-red) 0%, var(--color-black) 80%, var(--color-black) 100%);
@@ -31,15 +31,16 @@ p {
 
 header {
     position: fixed;
-    top: 40px;
+    top: 10px;
 }
 
 .btn-red {
-    background-color: var(--color-red);
+    background-color: var(--color-dark-red);
 }
 
 .btn-red:hover {
     border-color: var(--color-white);
+    background-color: var(--color-red);
 
     i {
         color: var(--color-white);
@@ -51,7 +52,8 @@ header {
 }
 
 #offcanvasWithBothOptions {
-    width: 25vw;
+    width: max-content;
+    padding: 20px;
     background-color: var(--color-black);
     border-right: 0.5px solid var(--color-dark-red);
     color: var(--color-white);
@@ -61,16 +63,36 @@ header {
     color: var(--color-white);
 }
 
+.offcanvas-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
 .offcanvas-body {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 0px;
 }
 
 .offcanvas-btn {
     background-color: transparent;
-    border: 1px solid var(--color-red);
+    border: 1px solid var(--color-white);
     border-radius: 10px;
-    width: 50%;
+    width: 70%;
+}
+
+.active{
+    background-color: transparent;
+    border: 3px solid var(--color-red);
+}
+
+.offcanvas-btn:hover {
+    background-color: var(--color-dark-red);
+    border-color: var(--color-dark-red);
+    border-radius: 10px;
 }
 
 .offcanvas-btn a {
@@ -106,12 +128,89 @@ header {
 }
 
 
+/* CONTACTO ______________________________________________________________________________________________________ */
+.contact-container {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.title-contact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr;
+    background: var(--color-black);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    color: var(--color-white);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: var(--color-dark-red);
+    color: var(--color-white);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: var(--color-red);
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+#noti-check {
+    width: 15%;
+}
+
+
+
 
 @media (max-width: 576px) {
+
+    header {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+
+    .offcanvas-body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 
     .img-scuderia {
         width: 100%;
         height: auto;
     }
+
+    .title-contact {
+        padding: 0px 20px;
+    }
+
 
 }
