@@ -145,13 +145,17 @@ header {
     padding: 20px;
 }
 
-/* CORREDORES ________________________________________________________________________________________________________*/
+/* PILOTOS ________________________________________________________________________________________________________*/
 .corre {
     border: 1px solid var(--color-dark-red);
     box-shadow: 2px 2px 10px var(--color-dark-red);
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 50px;
+}
+
+div.datos-pil{
+    flex-direction: row;
 }
 
 .col-libre {
@@ -300,12 +304,6 @@ footer {
         display: flex;
         flex-direction: column;
         width: 100%;
-    }
-
-    .centrar{
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .datos-pil {
