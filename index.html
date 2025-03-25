@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Inicio</title>
@@ -67,9 +69,26 @@
 
     <main>
         <div class="container">
-            <h1>INICIO</h1>
+            <div class="div-presentacion">
+                <h1>Bienvenidx a Circuito 1!</h1>
+                <p>Si la Fórmula 1 es tu pasión, ¡este es tu lugar! Aquí encontrarás toda la información sobre las
+                    carreras, pilotos y equipos que hacen rugir los motores en cada Gran Premio.
+                    Desde análisis detallados hasta curiosidades y estadísticas, Circuito1 te mantiene al día con lo
+                    último del mundo de la F1!</p>
+                <ul>
+                    <li>🚥 Resultados en vivo!</li>
+                    <li>📊 Estadísticas de pilotos y equipos!</li>
+                    <li>📰 Noticias y curiosidades!</li>
+                    <li>🏆 Historia y récords de la F1!</li>
+                </ul>
+                <p>Ajustá tu casco, acelerá y disfrutá del mejor contenido sobre la máxima categoría del automovilismo.
+                    ¡Que empiece la carrera! 🏎️💨</p>
+            </div>
 
-            <div class="row corre mb-4 px-2 py-3">
+            <hr>
+
+            <h3 class="text-center my-5" data-aos="fade-up">INICIO</h3>
+            <div class="row corre px-2 py-3" data-aos="fade-up">
                 <h4>Próxima carrera: </h4>
 
                 <div class="col-12 col-sm-4 my-3">
@@ -105,7 +124,7 @@
                 </div>
             </div>
 
-            <div class="row corre mb-4 px-2 py-3">
+            <div class="row corre px-2 py-3" data-aos="fade-up">
                 <h4>Carrera anterior: </h4>
 
                 <div class="col-12 col-sm-4 my-3">
@@ -141,7 +160,7 @@
                 </div>
             </div>
 
-            <div class="row corre mb-4 px-2 py-3">
+            <div class="row corre px-2 py-3" data-aos="fade-up">
                 <h4>Campeonato de Pilotos:</h4>
 
                 <div class="row mb-3 pt-2">
@@ -196,7 +215,7 @@
                 </div>
             </div>
 
-            <div class="row corre mb-4 px-2 py-3">
+            <div class="row corre px-2 py-3" data-aos="fade-up">
                 <h4>Campeonato de Constructores:</h4>
 
                 <div class="row mb-4 pt-3">
@@ -242,12 +261,36 @@
         </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="footer-text">Circuito1 © 2025. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
     <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <!-- Scripts AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        // Inicializar AOS
+        AOS.init({
+            duration: 800,  // Duración global de la animación en milisegundos
+        });
+    </script>
 </body>
 
 </html>
