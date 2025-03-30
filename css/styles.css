@@ -162,6 +162,13 @@ footer {
   opacity: 0.7;
 }
 
+.div-presentacion {
+  box-shadow: 2px 2px 10px rgb(190, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgb(190, 0, 0);
+  padding: 20px;
+}
+
 .contact-container {
   display: grid;
   place-items: center;

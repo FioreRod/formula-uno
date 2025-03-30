@@ -1,12 +1,14 @@
-@use "./global/fonts";
+@use './global/fonts';
 
-@use "./global/reset";
+@use './global/reset';
 
 @use './util/variables';
 
-@use "./componentes/header";
+@use './componentes/header';
 
-@use "./componentes/footer";
+@use './componentes/footer';
+
+@use './pages/index';
 
 @use './pages/contac';
 
