@@ -2,10 +2,18 @@
 
 @use "./global/reset";
 
-@use './pages/variables';
+@use './util/variables';
 
 @use "./componentes/header";
 
 @use "./componentes/footer";
+
+@use './pages/contac';
+
+@use './pages/crono';
+
+@use './pages/pils';
+
+@use './pages/scud';
 
 

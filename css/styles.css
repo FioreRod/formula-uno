@@ -126,6 +126,7 @@ footer {
   text-align: center;
   padding: 20px 0;
   border-top: 2px solid rgb(190, 0, 0);
+  margin-top: 30px;
 }
 
 .footer-container {
@@ -159,6 +160,60 @@ footer {
 .footer-text {
   font-size: 12px;
   opacity: 0.7;
+}
+
+.contact-container {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  height: 100vh;
+}
+
+.title-contact {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr;
+  background: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  color: rgb(255, 255, 255);
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.contact-form button {
+  background: rgb(190, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background: rgb(225, 4, 1);
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+#noti-check {
+  width: 15%;
 }
 
 /*# sourceMappingURL=styles.css.map */

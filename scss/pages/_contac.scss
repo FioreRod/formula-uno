@@ -1,0 +1,60 @@
+@use '../global/fonts';
+@use '../util/variables';
+
+.contact-container {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.title-contact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr;
+    background: variables.$color-black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    color: variables.$color-white;
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    button {
+        background: variables.$color-dark-red;
+        color: variables.$color-white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+            background: variables.$color-red;
+        }
+    }
+
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+#noti-check {
+    width: 15%;
+}
