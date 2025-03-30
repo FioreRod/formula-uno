@@ -1,0 +1,76 @@
+@use '../pages/variables';
+
+header {
+    z-index: 10;
+    position: fixed;
+    top: 10px;
+
+    .btn-red {
+        background-color: variables.$color-dark-red;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            box-shadow: 2px 2px 15px variables.$color-white;
+            border-color: variables.$color-white;
+            background-color: variables.$color-red;
+
+            i{
+                color: variables.$color-white;
+            }
+        }
+
+        i{
+            color: variables.$color-black;
+        }
+    }
+}
+
+.text-reset {
+    color: variables.$color-white;
+}
+
+#offcanvasWithBothOptions {
+    width: max-content;
+    padding: 20px;
+    background-color: variables.$color-black;
+    border-right: 0.5px solid variables.$color-dark-red;
+    color: variables.$color-white;
+}
+
+.offcanvas-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+.offcanvas-btn {
+    background-color: transparent;
+    border: 1px solid variables.$color-white;
+    border-radius: 10px;
+    width: 70%;
+    margin-bottom: 20px;
+
+    &:hover {
+        background-color: variables.$color-dark-red;
+        border-color: variables.$color-dark-red;
+        border-radius: 10px;
+    }
+
+    a {
+        color: variables.$color-white;
+        text-decoration: none;
+    }
+}
+
+.active {
+    background-color: transparent;
+    border: 3px solid variables.$color-red;
+}
