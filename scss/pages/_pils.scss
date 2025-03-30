@@ -1,0 +1,32 @@
+@use '../global/fonts';
+@use '../util/variables';
+
+.corre {
+    border: 1px solid variables.$color-dark-red;
+    box-shadow: 2px 2px 10px variables.$color-dark-red;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+div.datos-pil{
+    flex-direction: row;
+}
+
+.col-libre {
+    background-color: transparent;
+}
+
+.col-pil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-piloto {
+    width: 90%;
+    height: fit-content;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
