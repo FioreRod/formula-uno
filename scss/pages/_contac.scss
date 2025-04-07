@@ -1,10 +1,9 @@
 @use '../global/fonts';
-@use '../util/variables';
+@use '../util/variables' as v;
+@use '../util/mixin' as m;
 
 .contact-container {
-    display: grid;
-    place-items: center;
-    align-content: center;
+    @include m.centrar-g;
     height: 100vh;
 }
 
@@ -18,12 +17,12 @@
     display: grid;
     gap: 15px;
     grid-template-columns: 1fr;
-    background: variables.$color-black;
+    background: v.$color-black;
     padding: 20px;
     border-radius: 10px;
     width: 90%;
     max-width: 400px;
-    color: variables.$color-white;
+    color: v.$color-white;
 
     input,
     textarea {
@@ -34,15 +33,15 @@
     }
 
     button {
-        background: variables.$color-dark-red;
-        color: variables.$color-white;
+        background: v.$color-dark-red;
+        color: v.$color-white;
         border: none;
         padding: 10px;
         border-radius: 5px;
         cursor: pointer;
 
         &:hover {
-            background: variables.$color-red;
+            background: v.$color-red;
         }
     }
 

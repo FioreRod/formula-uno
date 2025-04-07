@@ -1,0 +1,11 @@
+@mixin centrar-f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin centrar-g {
+  display: grid;
+  place-items: center;
+  align-content: center;
+}

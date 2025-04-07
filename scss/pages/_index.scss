@@ -1,9 +1,9 @@
 @use '../global/fonts';
-@use '../util/variables';
+@use '../util/variables' as v;
 
 .div-presentacion {
-    box-shadow: 2px 2px 10px variables.$color-dark-red;
-    background-color: variables.$color-black-opacidad;
-    border: 1px solid variables.$color-dark-red;
+    box-shadow: 2px 2px 10px v.$color-dark-red;
+    background-color: v.$color-black-opacidad;
+    border: 1px solid v.$color-dark-red;
     padding: 20px;
 }

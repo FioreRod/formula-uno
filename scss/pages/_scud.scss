@@ -1,5 +1,5 @@
 @use '../global/fonts';
-@use '../util/variables';
+@use '../util/variables' as v;
 
 .img-scuderia:hover {
     box-shadow: none;

@@ -11,8 +11,6 @@ body {
   background-attachment: fixed;
   color: rgb(255, 255, 255);
 }
-
-/*Capa transparente para el blur*/
 body::before {
   content: "";
   position: fixed;
@@ -100,15 +98,16 @@ header .btn-red i {
 
 .offcanvas-header {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   padding: 20px 0px;
 }
 
 .offcanvas-body {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 0px;
 }
 
@@ -145,8 +144,9 @@ footer {
 
 .footer-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 10px;
 }
 

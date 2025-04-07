@@ -1,5 +1,5 @@
 @use './fonts';
-@use '../util/variables';
+@use '../util/variables' as v;
 
 body {
     height: 100vh;
@@ -9,13 +9,14 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    // background: linear-gradient(222deg, variables.$color-red 0%, variables.$color-black 80%, variables.$color-black 100%);
+    // background: linear-gradient(222deg, v.$color-red 0%, v.$color-black 80%, v.$color-black 100%);
     // background-repeat: no-repeat;
-    color: variables.$color-white;
+    color: v.$color-white;
 
+// Capa sobre el fondo para el blur
     &::before {
         content: "";
-        position: fixed; // Se mantiene fija en la pantalla
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -32,7 +33,7 @@ h1,
 h3,
 h4,
 h5 {
-    color: variables.$color-white;
+    color: v.$color-white;
     font-family: "Michroma", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -50,7 +51,7 @@ h3 {
 
 p,
 label {
-    color: variables.$color-white;
+    color: v.$color-white;
     text-align: justify;
     font-family: "Archivo", sans-serif;
     font-optical-sizing: auto;
@@ -66,6 +67,6 @@ img {
     &:hover {
         transform: scale(1.05);
         /* Aumenta el tamaño en un 10% */
-        box-shadow: 2px 2px 10px variables.$color-dark-red;
+        box-shadow: 2px 2px 10px v.$color-dark-red;
     }
 }
