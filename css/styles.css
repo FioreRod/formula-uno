@@ -69,10 +69,19 @@ header {
   top: 10px;
 }
 header .btn-red {
+  padding: 10px;
+  background-image: url("../images/formula1.png");
+  width: 60px;
+  height: 40px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: rgb(190, 0, 0);
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 header .btn-red:hover {
+  background-image: url("../images/formula2.png");
+  z-index: -1;
   box-shadow: 2px 2px 15px rgb(255, 255, 255);
   border-color: rgb(255, 255, 255);
   background-color: rgb(225, 4, 1);
