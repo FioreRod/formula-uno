@@ -1,16 +1,15 @@
 @use './fonts';
 @use '../util/variables' as v;
+@use '../util/extend' as e;
 
 body {
     height: 100vh;
     padding-top: 30px;
     overflow-x: hidden;
     background-image: url('../images/fondos/fondo-ferrari-2.jpg');
-    background-size: cover;
-    background-position: center;
+    @extend %bg-image;
     background-attachment: fixed;
     // background: linear-gradient(222deg, v.$color-red 0%, v.$color-black 80%, v.$color-black 100%);
-    // background-repeat: no-repeat;
     color: v.$color-white;
 
 // Capa sobre el fondo para el blur
